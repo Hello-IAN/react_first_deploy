@@ -1,12 +1,13 @@
 {
   "name": "22tut",
   "version": "0.1.0",
-  "hompage": "https://Hello-IAN.github.io/react_first_deploy",
+  "homepage": "https://Hello-IAN.github.io/react_first_deploy",
   "private": true,
   "dependencies": {
     "axios": "^1.2.2",
     "date-fns": "^2.29.3",
     "easy-peasy": "^5.2.0",
+    "gh-pages": "^4.0.0",
     "json-server": "^0.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -15,12 +16,12 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run bulid",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run bulid"
   },
   "eslintConfig": {
     "extends": [
